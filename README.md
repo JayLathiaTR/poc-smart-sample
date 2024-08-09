@@ -8,3 +8,5 @@ POC repository to have a reference template for Smart Sample project including B
  - npm install
  - npm run build
 4. Run the main solution (F5)
+
+![image](https://github.com/user-attachments/assets/53e7ee15-6899-48f8-82e5-d85ec8154be0)
