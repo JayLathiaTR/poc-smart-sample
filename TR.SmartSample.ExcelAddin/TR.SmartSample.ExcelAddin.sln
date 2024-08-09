@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.35027.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TR.SmartSample.ExcelAddin", "TR.SmartSample.ExcelAddin\TR.SmartSample.ExcelAddin.csproj", "{D12B51B6-AC1C-4E1E-B325-959A81662E94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TR.SmartSample.BlazorWebUI", "TR.SmartSample.BlazorWebUI\TR.SmartSample.BlazorWebUI.csproj", "{F7202AF6-31A2-464B-BBE8-1A632B9DDEBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D12B51B6-AC1C-4E1E-B325-959A81662E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12B51B6-AC1C-4E1E-B325-959A81662E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12B51B6-AC1C-4E1E-B325-959A81662E94}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D12B51B6-AC1C-4E1E-B325-959A81662E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12B51B6-AC1C-4E1E-B325-959A81662E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D12B51B6-AC1C-4E1E-B325-959A81662E94}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F7202AF6-31A2-464B-BBE8-1A632B9DDEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7202AF6-31A2-464B-BBE8-1A632B9DDEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7202AF6-31A2-464B-BBE8-1A632B9DDEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7202AF6-31A2-464B-BBE8-1A632B9DDEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB5EB8EA-3634-4F9B-87E4-E2F38F234F7C}
+	EndGlobalSection
+EndGlobal
