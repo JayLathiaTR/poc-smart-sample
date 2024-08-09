@@ -10,14 +10,14 @@
   <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
 
   <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
-  <Id>9458f362-8a57-45b5-876a-3c6916b541a9</Id>
+  <Id>f95380b1-dd54-4f1d-83fd-0ea5780e1cd0</Id>
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
   <Version>1.0.0.0</Version>
-  <ProviderName>Thomson Reuters - Smart Sampe</ProviderName>
+  <ProviderName>Thomson Reuters Smart Sample</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
-  <DisplayName DefaultValue="TR SmartSample Addin" />
+  <DisplayName DefaultValue="TR Smart Sample" />
   <Description DefaultValue="TR SmartSample Addin for data ingestion and matching"/>
   <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
   <IconUrl DefaultValue="~remoteAppUrl/Images/Button32x32.png" />

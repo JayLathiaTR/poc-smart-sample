@@ -1,0 +1,12 @@
+@import "../node_modules/@saffron/core-styles/dist/index.css";
+@import '../node_modules/@saffron/core-styles/dist/tokens/variables.css';
+@import '../node_modules/@saffron/core-styles/dist/fonts.css';
+@import '../node_modules/@saffron/core-styles/dist/font-awesome.css';
+
+// changed saffron primary color
+:root, ::before, ::after {
+    --saf-color-interactive-primary-default: #005DA2;
+    --saf-color-interactive-on-secondary-default: #005DA2;
+    --saf-color-interactive-on-tertiary-default: #005DA2;
+    --saf-color-interactive-disabled-subtle: #D8D8D8; // disabled button background
+}

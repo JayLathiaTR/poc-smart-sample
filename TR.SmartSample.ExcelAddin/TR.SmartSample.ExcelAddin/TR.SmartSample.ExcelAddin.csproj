@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D12B51B6-AC1C-4E1E-B325-959A81662E94}</ProjectGuid>
+    <ProjectGuid>{14CA5A75-37AA-49FA-93F2-58C7DD94FA9B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TR.SmartSample.ExcelAddin</RootNamespace>
@@ -13,11 +13,11 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
-    <AppFeaturePartId>{ec58190f-5b60-474b-890b-4c12d3b14f4c}</AppFeaturePartId>
-    <WspPartId>{cbd5cb01-f091-4a82-a351-a0305a6d028a}</WspPartId>
-    <WorkflowPartId>{f4dba6ab-81f3-43a4-ac36-0771c548a37a}</WorkflowPartId>
-    <CspkgPartId>{881ad46c-1839-4a8e-871a-86bfbc0bf545}</CspkgPartId>
-    <SqlPackagePartId>{bd359c32-5ba3-4302-a42c-389e43e18c6b}</SqlPackagePartId>
+    <AppFeaturePartId>{de56bcfd-8f59-4ba3-8d11-623f49616f3c}</AppFeaturePartId>
+    <WspPartId>{3f12b9dd-933f-45bb-9d6c-e8874e53480e}</WspPartId>
+    <WorkflowPartId>{0dc00a3f-2efa-404f-bc81-e5f38c281e50}</WorkflowPartId>
+    <CspkgPartId>{8926b4e0-6170-44d2-9e7a-276889f061de}</CspkgPartId>
+    <SqlPackagePartId>{6c4c2cf7-e414-44ee-91a4-1fc5c62449ac}</SqlPackagePartId>
     <ProjectMode>OfficeApp</ProjectMode>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
@@ -44,7 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="TR.SmartSample.ExcelAddinManifest\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{cce828f8-7f45-42ba-a320-c5336a6f262a}</SharePointProjectItemId>
+      <SharePointProjectItemId>{3e95a2f8-4a4c-40a5-b810-17b636739964}</SharePointProjectItemId>
     </None>
     <Content Include="TR.SmartSample.ExcelAddinManifest\TR.SmartSample.ExcelAddin.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
