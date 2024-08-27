@@ -1,16 +1,98 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+<style>
+    /* body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .show-hide-items {
+        z-index: 5;
+        max-height: calc(100vh - 260px);
+        overflow-y: inherit;
+        right: 24px;
+    } */
+
+    .content {
+        padding: 20px;
+    }
+
+    .show-hide-items {
+        z-index: 5;
+        max-height: calc(100vh - 260px);
+        overflow-y: inherit;
+        right: 24px;
+    }
+</style>
+
+<div>
+    <saf-product-header tasks-aria-label="Product" global-aria-label="Global">
+        <saf-logo slot="logo" appearance="full-color" product-name="EM Smart Sample"></saf-logo>
+        <div slot="global">
+            <saf-product-header-item>
+                <saf-button appearance="tertiary" icon-only="" id="user-profile-button"
+                            aria-label="User profile" @onclick="ProfileClick"
+                            aria-controls="user-dropdown-menu" aria-haspopup="true">
+                    <saf-icon size="22" icon-name="circle-user"></saf-icon>
+                </saf-button>
+                <div id="user-dropdown-menu" class="position-absolute show-hide-items" @onclick="ProfileClick">
+                    @if (isProfileOpened)
+                    {
+                        <saf-menu>
+                            <saf-menu-item>
+                                Login
+                            </saf-menu-item>
+                            <saf-menu-item>
+                                Manage
+                            </saf-menu-item>
+                            <saf-menu-item>
+                                Help
+                            </saf-menu-item>
+                        </saf-menu>
+                    }
+                </div>
+            </saf-product-header-item>
         </div>
+    </saf-product-header>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+    <NavMenu />
+
+    @* <div class="content px-4"> *@
+    <div class="content">
+        @Body
+    </div>
 </div>
+
+<div>
+    <saf-footer product-name="Smart Sample Addin" a11y-aria-label-social-icons="Social Links" a11y-aria-label-anchor-group="Footer Links">
+        <saf-list slot="footer-links" size="medium" list-style="none" order="unordered" inline="true">
+            <saf-list-item>
+                <saf-anchor href="https://www.thomsonreuters.com/en/privacy-statement.html" target="_blank">Privacy</saf-anchor>
+            </saf-list-item>
+        </saf-list>
+        <saf-list slot="footer-social" size="medium" list-style="none" order="unordered" inline="true">
+            <saf-list-item>
+                <saf-anchor aria-label="email Thomson Reuters" href="mailto:info@thomsonreuters.com" target="_blank">
+                    <saf-icon icon-name="envelope" appearance="light" color="#000"></saf-icon>
+                </saf-anchor>
+            </saf-list-item>
+            <saf-list-item>
+                <saf-anchor aria-label="Thomson Reuters on LinkedIn" href="https://www.linkedin.com/company/thomson-reuters" target="_blank">
+                    <saf-icon icon-name="linkedin-in" appearance="brands" color="#000"></saf-icon>
+                </saf-anchor>
+            </saf-list-item>
+        </saf-list>
+    </saf-footer>
+</div>
+
+@code {
+    private bool isProfileOpened { get; set; } = false;
+    private void ProfileClick()
+    {
+        isProfileOpened = !isProfileOpened;
+    }
+}

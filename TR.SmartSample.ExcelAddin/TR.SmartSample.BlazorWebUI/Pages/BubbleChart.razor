@@ -1,0 +1,88 @@
+﻿@page "/bubblechart"
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .item-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .saf-button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+    }
+
+    .saf-button:hover {
+        background-color: #e0e0e0;
+    }
+</style>
+
+<p>
+    <saf-text appearance="body-default-md" density="inherit">
+        This sample shows how to create a bubble chart, with each chart series (or bubble) representing a single table row.
+    </saf-text>
+</p>
+<div class="center-container">
+    @if (!IsLoading)
+    {
+        <div class="item-group">
+            <saf-text appearance="body-strong-lg" density="inherit">Set up</saf-text>
+            <saf-button @onclick="CreateTable" autfocus="false" appearance="secondary">
+                <saf-icon slot="start" icon-name="grid"> </saf-icon>
+                Create table
+            </saf-button>
+        </div>
+
+        <div class="item-group">
+            <saf-text appearance="body-strong-lg" density="inherit">Try it out</saf-text>
+            <saf-button @onclick="CreateBubbleChart" autfocus="false" appearance="secondary">
+                <saf-icon slot="start" icon-name="image"> </saf-icon>
+                Create a bubble chart
+            </saf-button>
+        </div>
+
+        if (!string.IsNullOrWhiteSpace(ErrorMessage))
+        {
+            <saf-alert appearance="error" duration="10" alert-type="toast" close-aria-label="Close alert" id="alert-default" hide-close-button="false">
+                @ErrorMessage
+            </saf-alert>
+        }
+    }
+    else
+    {
+        <saf-progress-ring role="progressbar" indeterminate="true" id="ring" max="100" min="0"
+                           progresssize="medium" label="Fetching Smart Sample Data..." aria-valuenow="75"
+                           aria-valuemin="0" aria-valuemax="100" aria-label="progress bar">
+        </saf-progress-ring>
+    }
+</div>

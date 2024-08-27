@@ -1,7 +1,31 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>TR Smart Sample</PageTitle>
 
-<h1>Hello, world!</h1>
+<style>
+	.form-element {
+		margin-bottom: 1rem; /* Adjust the margin as needed */
+	}
+</style>
 
-Welcome to your new app.
+<div class="row">
+	<p>
+		<saf-text appearance="body-strong-lg" density="inherit">Call Office JavaScript API</saf-text>
+	</p>
+	<p>
+		<saf-text appearance="body-default-md" density="inherit">
+			Set cell A1 to the value of 'Hello world!' using JavaScript interop between Blazor and the Office JavaScript API.
+		</saf-text>
+	</p>
+	<div class="col-md-3">
+		<div class="form-element">
+			<input @bind="DynamicValue" placeholder="Enter your value here" />
+		</div>
+		<div class="form-element">
+			<saf-button @onclick="HelloButton" autfocus="false" appearance="primary">
+				<saf-icon slot="start" icon-name="edit"> </saf-icon>
+				Saffron Hello
+			</saf-button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+[
+  {
+    "product": "Inventories Apple",
+    "inventory": 2000,
+    "price": "$2.45",
+    "currentMarketShare": "10%"
+  },
+  {
+    "product": "Visuo orange",
+    "inventory": 10000,
+    "price": "$2.12",
+    "currentMarketShare": "45%"
+  },
+  {
+    "product": "Linting Lime",
+    "inventory": 4000,
+    "price": "$0.70",
+    "currentMarketShare": "66%"
+  },
+  {
+    "product": "Black Lemon",
+    "inventory": 100,
+    "price": "$2.65",
+    "currentMarketShare": "5%"
+  },
+  {
+    "product": "Pemsi Permecia",
+    "inventory": 3000,
+    "price": "$1.69",
+    "currentMarketShare": "14%"
+  },
+  {
+    "product": "Yazdik Yuz",
+    "inventory": 7500,
+    "price": "$3.23",
+    "currentMarketShare": "34%"
+  }
+]

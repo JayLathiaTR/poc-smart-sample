@@ -1,39 +1,15 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">TR.SmartSample.BlazorWebUI</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
-
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
+﻿<div class="navbar px-3">
+    <saf-tab aria-label="Reload" @onclick="@(() => MoveToPage("/"))">Reload</saf-tab>
+    <saf-tab aria-label="Bubble Chart" @onclick="@(() => MoveToPage("/bubblechart"))">Bubble Chart</saf-tab>
 </div>
 
 @code {
-    private bool collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    [Inject]
+    public NavigationManager NavigationManager { get; set; } = default!;
 
-    private void ToggleNavMenu()
+    void MoveToPage(string page)
     {
-        collapseNavMenu = !collapseNavMenu;
+        NavigationManager.NavigateTo(page, true);
     }
 }
