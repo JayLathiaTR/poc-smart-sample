@@ -15,4 +15,4 @@ POC repository to have a reference template for Smart Sample project including B
  - <code>npm run build</code>
 4. Run the main solution (F5)
 
-![image](https://github.com/user-attachments/assets/53e7ee15-6899-48f8-82e5-d85ec8154be0)
+![image](https://github.com/user-attachments/assets/ec2079b1-9cf6-48a7-9f9e-33222c45276b)
