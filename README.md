@@ -8,8 +8,8 @@ POC repository to have a reference template for Smart Sample project including B
 ![image](https://github.com/user-attachments/assets/d1ca54f8-f29a-401b-9b8f-272e1a350def)
 
 # Code Scaffolding
-1. Clone the repo
-2. Go to the **NpmJS** folder path of this project in the Dev Powershell or in the CMD
+1. Clone the repo and open in Visual Studio 2022.
+2. Go to the **NpmJS** folder path of this project in the Dev Powershell or in the CMD.
 3. Run these commands:
  - <code>npm install</code>
  - <code>npm run build</code>
