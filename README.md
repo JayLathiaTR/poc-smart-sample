@@ -3,6 +3,7 @@ POC repository to have a reference template for Smart Sample project including B
 
 # Pre-requisites
 * Make sure the Visual Studio 2022 Latest version is installed
+* Make sure the .Net Framework v4.8.1 is installed.
 * Make sure the following Office/Sharepoint development toolset is installed
 
 ![image](https://github.com/user-attachments/assets/d1ca54f8-f29a-401b-9b8f-272e1a350def)
