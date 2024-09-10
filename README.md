@@ -1,4 +1,4 @@
-# POC SMART SAMPLE
+# [POC] TR SAFFRONIZED BLAZOR WEB ASSEMBLY with EXCEL ADDIN
 POC repository to have a reference template for Smart Sample project including Blazor + Saffron + Excel-Addins
 
 # Pre-requisites
